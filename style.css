@@ -17,6 +17,14 @@
   margin-left: 3px;
 }
 
+@media screen and (max-width: 500px) {
+
+  .mdl-card{
+    max-width: 100%;
+  }
+
+}
+
 /*
 
 
