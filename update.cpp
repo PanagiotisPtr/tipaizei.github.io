@@ -108,7 +108,7 @@ int main()
 				imdb >> IMDbLink;
 				filename = path + movie + ".html";
 				makePage(filename,thumbnail,YTlink,description,time,movie,rating,duration,IMDbLink);
-				string target = "../MoviesSite/moviePages/" + url_encode(movie) + ".html";
+				string target = "../tipaizei.github.io/moviePages/" + url_encode(movie) + ".html";
 				addCardFull(target,thumbnail, rating, movie, time, channel, description);
 			}
 			//addCardSimple(channel, time, movie);
