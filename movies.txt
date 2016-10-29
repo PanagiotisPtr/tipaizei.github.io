@@ -1,0 +1,31 @@
+Ant1
+20:00
+28 Οκτωβρίου Ώρα 5.30
+Mega
+21:00
+2012
+Μακεδονία TV
+22:00
+The Lost Treasure of the Grand Canyon
+Alpha
+14:45
+Ταινία
+Alpha
+15:50
+Κάτι να Καίει
+Alpha
+21:00
+Η Ανταλλαγή
+Star
+22:45
+Chinese Zodiac
+Epsilon TV
+20:00
+Εγώ Ρεζίλεψα τον Χίτλερ
+Epsilon TV
+22:30
+Όχι
+ΕΡΤ2
+21:00
+Κορίτσι για Σπίτι (Hors de Prix)
+SCRIPT_END
