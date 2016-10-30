@@ -55,7 +55,7 @@ int main()
 	ifstream fin;
 	fin.open("movies.txt");
 	ifstream rfin;
-	string path = "/home/panos/Desktop/MoviesSite/moviePages/";
+	string path = "/home/panos/Desktop/siteUpdates/tipaizei.github.io/moviePages/";
 	rfin.open("movieReviews.txt");
 	freopen("index.html", "wt", stdout);
 
