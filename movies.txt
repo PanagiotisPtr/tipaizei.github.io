@@ -1,31 +1,19 @@
 Ant1
-20:00
-28 Οκτωβρίου Ώρα 5.30
-Mega
-21:00
-2012
-Μακεδονία TV
-22:00
-The Lost Treasure of the Grand Canyon
-Alpha
-14:45
+14:30
 Ταινία
+Ant1
+21:45
+Transformers 3: Dark of the Moon
+Ant1
+22:00
+Ταινία
+Mega
+15:00
+Επιστροφή στη Γαλάζια Λίμνη (Return to the Blue Lagoon)
 Alpha
-15:50
-Κάτι να Καίει
-Alpha
-21:00
-Η Ανταλλαγή
+23:15
+Οι Διώκτες του Εγκλήματος (Gangster Squad)
 Star
-22:45
-Chinese Zodiac
-Epsilon TV
-20:00
-Εγώ Ρεζίλεψα τον Χίτλερ
-Epsilon TV
-22:30
-Όχι
-ΕΡΤ2
-21:00
-Κορίτσι για Σπίτι (Hors de Prix)
+13:20
+Κωδικό Όνομα: Αλεξίσφαιρος (Bulletproof)
 SCRIPT_END
