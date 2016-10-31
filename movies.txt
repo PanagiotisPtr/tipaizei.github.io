@@ -1,19 +1,4 @@
-Ant1
-14:30
-Ταινία
-Ant1
-21:45
-Transformers 3: Dark of the Moon
-Ant1
-22:00
-Ταινία
-Mega
-15:00
-Επιστροφή στη Γαλάζια Λίμνη (Return to the Blue Lagoon)
 Alpha
-23:15
-Οι Διώκτες του Εγκλήματος (Gangster Squad)
-Star
-13:20
-Κωδικό Όνομα: Αλεξίσφαιρος (Bulletproof)
+23:30
+Η Σιωπή των Αμνών (The Silence of the Lambs)
 SCRIPT_END
