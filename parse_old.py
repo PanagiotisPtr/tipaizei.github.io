@@ -3,52 +3,44 @@ import urllib.request
 import urllib.parse
 import webbrowser
 
-sauce = urllib.request.urlopen('http://www.zappit.gr/tv-program').read()
+sauce = urllib.request.urlopen('http://tv.pathfinder.gr/').read()
 
 soup = bs.BeautifulSoup(sauce, 'lxml')
 
-rowsLeft = soup.find('div',{'class':'column small-12 medium-6'})
+moviesEven = soup.find_all('tr', {'class':'even'})
+moviesOdd = soup.find_all('tr', {'class':'odd'})
 
-#for row in rowsLeft:
-	#channel = row.find('tr').find('span',{'class':'program__channel-name'}).string
-	#print(channel)
-	#for channel in row.find('table',{'class':'program__table_hor'}):
+allMovies = []
+
 
 with open("movies.txt", 'w') as out:
+	for movie in moviesEven:
+		stats = movie.find_all('td')
+		i = 0
+		info = []
+		for element in stats:
+			if i < 3:
+				info.append(element.text)
+				i+=1
+		out.write(info[2]+'\n')
+		out.write(info[0]+'\n')
+		out.write(info[1]+'\n')
+		allMovies.append(info[1])
 
-	channels = soup.find_all('span',{'class':'program__channel-name'})
-	channelList = []
+	for movie in moviesOdd:
+		stats = movie.find_all('td')
+		i = 0
+		info = []
+		for element in stats:
+			if i < 3:
+				info.append(element.text)
+				i+=1
+		out.write(info[2]+'\n')
+		out.write(info[0]+'\n')
+		out.write(info[1]+'\n')
+		allMovies.append(info[1])
 
-	for channel in channels:
-		#print(channel.string)
-		channelList.append(channel.string)
-
-	chnl = ''
-
-	allMovies = []
-
-	for tr in soup.find_all('tr'):
-		if tr.find('span', {'class':'program__channel-name'})!=None:
-			#print(tr.find('span', {'class':'program__channel-name'}).string)
-			chnl = tr.find('span', {'class':'program__channel-name'}).string
-
-		if(chnl=='OTE Cinema 1 HD'):
-			break
-		for movie in tr.find_all('td', {'class':'movie'}):
-			name = movie.find('span',{'class':'program__show'}).find('a').string
-			time = movie.find('span',{'class':'program__hour'}).string
-			#print(chnl)
-			out.write(chnl+'\n')
-			#print(time)
-			out.write(time+'\n')
-			#print(name+'\n')
-			out.write(name+'\n')
-			allMovies.append(name)
-
-	#print("SCRIPT_END")
-	out.write("SCRIPT_END")
-
-
+	out.write('SCRIPT_END')
 searchLinks = []
 
 for mov in allMovies:
@@ -135,7 +127,6 @@ for name in movieFullNames:
 	youtubeLinks.append(ytLink)
 
 videoLinks = []
-#https://www.youtube.com/embed/4l5eZp8Ae9c
 embedLinks = []
 
 for link in youtubeLinks:
@@ -154,63 +145,4 @@ with open("movieLinks.txt", 'w') as out:
 	for link in embedLinks:
 		out.write(link+'\n')
 
-
-'''
-
-for link in searchLinks:
-	revSauce = urllib.request.urlopen(link).read()
-	revSoup = bs.BeautifulSoup(revSauce, 'lxml')
-	a = revSoup.find('td').find('a')
-	if a==None:
-		print("None")
-	else:
-		revLink = "http://www.imdb.com" + a['href']
-		sweetSauce = urllib.request.urlopen(revLink).read()
-		sweetSoup = bs.BeautifulSoup(sweetSauce, 'lxml')
-		description = sweetSoup.find('div',{'class':'summary_text'}).text
-		thumbnailLink = sweetSoup.find('div',{'class':'poster'}).find('img')
-		thumbnailLink = thumbnailLink['src']
-		rating = sweetSoup.find('div',{'class':'ratingValue'}).find('span').text
-		duration = sweetSoup.find('time').string
-		duration = duration.strip()
-		fullName = sweetSoup.find('h1').text
-		print(fullName)
-
-
-'''
-
 print("SUCCESS")
-
-#for movie in soup.find_all('td', {'class':'movie'}):
-#	name = movie.find('span',{'class':'program__show'}).find('a').string
-#	time = movie.find('span',{'class':'program__hour'}).string
-#	if movie.find('span',{'class':'program__show'}).find('a').string == None:
-#		print("efwfqwfehejfgadsgfkasgfoyuwfegdo22g3iUY@#$YUU!$U!$IF$!$IU$")
-#	print("\n"+time)
-#	print(name)
-
-######### WITHOUT WRITING TO FILE ########
-
-'''
-
-for channel in channels:
-	#print(channel.string)
-	channelList.append(channel.string)
-
-chnl = ''
-
-for tr in soup.find_all('tr'):
-	if tr.find('span', {'class':'program__channel-name'})!=None:
-		#print(tr.find('span', {'class':'program__channel-name'}).string)
-		chnl = tr.find('span', {'class':'program__channel-name'}).string
-
-	if(chnl=='OTE Cinema 1 HD'):
-		break
-	for movie in tr.find_all('td', {'class':'movie'}):
-		name = movie.find('span',{'class':'program__show'}).find('a').string
-		time = movie.find('span',{'class':'program__hour'}).string
-		print("\n"+chnl)
-		print(time)
-		print(name)
-
-'''
