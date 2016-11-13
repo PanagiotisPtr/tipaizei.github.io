@@ -93,7 +93,7 @@ int main()
 				rating = "(?)";
 				description = "No Info";
 				duration = "?h ?m";
-				thumbnail = "http://www.cost-ic0803.org/fotografie/foto4.jpg";
+				thumbnail = "http://www.classicposters.com/images/nopicture.gif"; 
 				addCardFull(null,thumbnail, rating, movie, time, channel, description);
 			}
 			else{
