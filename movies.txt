@@ -1,31 +1,13 @@
-Ant1
-22:00
-Transformers 4: Εποχή Αφανισμού (Transformers: Age of Extinction)
-Mega
-15:00
-Η Τελική Μάχη (Street Fighter)
-Mega
-23:40
-Legion
-Mega
-01:30
-Ειδικοί Πράκτορες: Γ.Α.Τ.Ε.Σ. (D.E.B.S.)
-ΕΡΤ3
-22:30
-Ξένη Ταινία
-Extra
-01:00
-Ξένη Ταινία
 Alpha
+23:50
+Αν Μείνω (If I Stay)
+Epsilon TV
 21:00
-Pretty Woman
-Alpha
-23:30
-Ανάμεσα σε Δύο Κόσμους (Upside Down)
-Star
-21:00
-Η Σωφερίνα
+Έμπαινε Μανωλιό
 ΕΡΤ2
-21:00
-Εγώ, ο Εαυτός μου & η Μαμά (Me, Myself and Mum)
+21:50
+Εις το Όνομα του Πατρός (In the Name of the Father)
+ΑΡΤ
+06:00
+Ελληνικός Κινηματογράφος
 SCRIPT_END
