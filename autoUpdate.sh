@@ -9,3 +9,5 @@ git add .
 git commit -m "Daily Update"
 git push -f
 echo "Pushed Changes on GitHub"
+echo "Enjoy"
+sensible-browser http://www.tipaizei.tk
