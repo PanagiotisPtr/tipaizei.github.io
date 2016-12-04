@@ -2,7 +2,7 @@
 echo "Parsing Data from the Internet"
 python3 parse_updated.py
 echo "Updating index.html"
-g++ update.cpp
+g++ update.cpp -std=c++11
 ./a.out
 echo "Pushing update to GitHub"
 git add .
