@@ -47,7 +47,7 @@ void addCardSimple(string channel, string time, string movie)
 
 void addCardFull(string target, string thumbnail, string rating, string name, string time, string channel, string description)
 {
-	cout << "<div class=\"mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp\"><a href=\""+target+"\"><figure class=\"mdl-card__media\"><img src=\"" + thumbnail + "\" alt=\"\" /></figure></a><div class=\"mdl-card__title\"><h1 class=\"mdl-card__title-text\">"+ name +"</h1><h1 class=\"mdl-card__title-text\">"+rating+"</h1></div><div class=\"mdl-card__supporting-text\"><strong>" + time + "</strong><br /><strong>"+channel+"</strong><p>"+description+"</p></div></div>" << endl;
+	cout << "<div class=\"mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp\"><a href=\""+target+"\"><figure class=\"mdl-card__media\"><img src=\"" + thumbnail + "\" alt=\"\" /></figure></a><div class=\"mdl-card__title\"><h1 class=\"mdl-card__title-text\">"+ name + "  " + rating +"</h1><h1 class=\"mdl-card__title-text\">"+"</h1></div><div class=\"mdl-card__supporting-text\"><strong>" + time + "</strong><br /><strong>"+channel+"</strong><p>"+description+"</p></div></div>" << endl;
 }
 
 int main()
