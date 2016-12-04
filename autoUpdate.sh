@@ -11,3 +11,4 @@ git push -f
 echo "Pushed Changes on GitHub"
 echo "Enjoy"
 sensible-browser http://www.tipaizei.tk
+exit
