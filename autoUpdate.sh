@@ -8,7 +8,7 @@ g++ update.cpp -std=c++11
 ./a.out
 echo "Pushing update to GitHub"
 git add .
-git commit -m "	$message"
+git commit -m "$message"
 git push -f
 echo "Pushed Changes on GitHub"
 echo "Enjoy"
