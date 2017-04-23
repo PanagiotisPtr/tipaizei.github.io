@@ -1,5 +1,6 @@
 # tipaizei.github.io
 Parses Data to find what movie plays on Greek TV.
+Link: https://goo.gl/6HGjzJ
 
 ## What this project is all about
 This project was made solely for myself and some of my friends at school in order to make it easier to see what movies are on the TV each day. This is NOT meant to be 
